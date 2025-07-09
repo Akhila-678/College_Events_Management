@@ -60,8 +60,16 @@ Open frontend/index.html in your browser and try:
 
 # 📌 API Endpoints
 
-- GET / - API health check
-- POST /events - Create a new event
-- GET /events - Get all events
-- POST /register - Register for an event
-- GET /registrations - Get all registrations
+| Method     | Endpoint                           | Description                            |
+| ---------- | ---------------------------------- | -------------------------------------- |
+| **GET**    | `/`                                | API health check                       |
+| **POST**   | `/events`                          | Create a new event                     |
+| **GET**    | `/events`                          | Get all events                         |
+| **GET**    | `/events/{event_id}`               | Get a specific event by ID             |
+| **PUT**    | `/events/{event_id}`               | Update an existing event               |
+| **DELETE** | `/events/{event_id}`               | Delete an event                        |
+| **GET**    | `/events/search?name=xyz`          | Search events by name                  |
+| **POST**   | `/register`                        | Register for an event                  |
+| **GET**    | `/registrations`                   | Get all registrations                  |
+| **GET**    | `/events/{event_id}/registrations` | Get registrations for a specific event |
+
