@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>College Events</h1>
+    <div id="events"></div>
+
+    <h2>Register for an Event</h2>
+    <form id="registerForm">
+        <select id="eventSelect"></select><br>
+        <input type="text" id="name" placeholder="Name" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <button type="submit">Register</button>
+    </form>
+    <p id="response"></p>
+
+    <h2>Create a New Event</h2>
+    <form id="createEventForm">
+    <input type="text" id="etitle" placeholder="Title" required><br>
+    <textarea id="edescription" placeholder="Description"></textarea><br>
+    <input type="date" id="edate" required><br>
+    <input type="time" id="etime" required><br>
+    <input type="text" id="evenue" placeholder="Venue" required><br>
+    <button type="submit">Create Event</button>
+    </form>
+    <p id="createResponse"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
