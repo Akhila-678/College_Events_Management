@@ -10,11 +10,20 @@ A **simple, beginner-friendly project** to manage college events and student reg
 
 ## 📌 Features
 
-- Create new events with title, description, date, time, and venue
-- View all available events
-- Register for events with name and email
-- Prevents duplicate registrations for the same event
-- MySQL database for data persistence
+✅ **Students can:**
+- View available events
+- Register for an event
+
+✅ **Admins can:**
+- Add new events via a simple form
+
+✅ **Backend:**
+- FastAPI provides a RESTful API for frontend interaction
+- SQLAlchemy ORM for database operations
+
+✅ **Frontend:**
+- HTML/CSS for layout and styling
+- JavaScript for making API calls and dynamic updates
 ---
 
 ## 🚀 Getting Started
@@ -39,7 +48,7 @@ pip install -r requirements.txt
 
 ### 4️⃣ Run the FastAPI Server
 uvicorn backend.main:app --reload
-Your API will be available at http://127.0.0.1:8000
+- Your API will be available at http://127.0.0.1:8000
 
 ### 5️⃣ Open the Frontend
 Open frontend/index.html in your browser and try:
