@@ -10,17 +10,18 @@ A **simple, beginner-friendly project** to manage college events and student reg
 
 ## 📌 Features
 
-✅ **Students can:**
-- View available events
-- Register for an event
-
-✅ **Admins can:**
-- Add new events via a simple form
-
+✅ Create an event  
+✅ Read all events  
+✅ Update an event  
+✅ Delete an event  
+✅ Search events by name  
+✅ Register for an event  
+✅ View registrations for each event
 ✅ **Backend:**
+- Python, FastAPI, SQLAlchemy, SQLite/MySQL
 - FastAPI provides a RESTful API for frontend interaction
 - SQLAlchemy ORM for database operations
-
+  
 ✅ **Frontend:**
 - HTML/CSS for layout and styling
 - JavaScript for making API calls and dynamic updates
