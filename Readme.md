@@ -28,10 +28,10 @@ cd college_events
 ### 2️⃣ Create & Activate Virtual Environment
 python -m venv venv
 
-# For Windows:
+- For Windows:
 .\venv\Scripts\activate
 
-# For macOS/Linux:
+- For macOS/Linux:
 source venv/bin/activate
 
 ### 3️⃣ Install Dependencies
@@ -48,7 +48,7 @@ Open frontend/index.html in your browser and try:
 
 - Creating new events
 
-## 📌 API Endpoints
+# 📌 API Endpoints
 
 - GET / - API health check
 - POST /events - Create a new event
