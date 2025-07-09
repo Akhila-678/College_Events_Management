@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Event Registration</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>College Events</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>College Events</h1>
-    <div id="events"></div>
+  <div class="container">
+    <h1>🎓 College Events Dashboard</h1>
 
-    <h2>Register for an Event</h2>
-    <form id="registerForm">
-        <select id="eventSelect"></select><br>
-        <input type="text" id="name" placeholder="Name" required><br>
-        <input type="email" id="email" placeholder="Email" required><br>
-        <button type="submit">Register</button>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search events by name">
+      <button onclick="searchEvents()">Search</button>
+      <button onclick="loadEvents()">Reset</button>
+    </div>
+
+    <form id="eventForm">
+      <h2>Create / Update Event</h2>
+      <input type="hidden" id="eventId">
+      <input type="text" id="title" placeholder="Title" required>
+      <input type="text" id="description" placeholder="Description" required>
+      <input type="date" id="date" required>
+      <input type="time" id="time" required>
+      <input type="text" id="venue" placeholder="Venue" required>
+      <button type="submit">Submit</button>
     </form>
-    <p id="response"></p>
 
-    <h2>Create a New Event</h2>
-    <form id="createEventForm">
-    <input type="text" id="etitle" placeholder="Title" required><br>
-    <textarea id="edescription" placeholder="Description"></textarea><br>
-    <input type="date" id="edate" required><br>
-    <input type="time" id="etime" required><br>
-    <input type="text" id="evenue" placeholder="Venue" required><br>
-    <button type="submit">Create Event</button>
-    </form>
-    <p id="createResponse"></p>
+    <h2>All Events</h2>
+    <div id="eventsList"></div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
